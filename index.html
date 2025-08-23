@@ -83,19 +83,18 @@
 </section>
 
 
-  <!-- How to Buy -->
-  <section id="how-to-buy" class="section">
-    <div class="card">
-      <h2>How to Buy</h2>
-      <p>Get your paws on $Crumb Cat by following the steps below:</p>
-      <ol>
-        <li>Set up a Solana wallet</li>
-        <li>Buy SOL on an exchange</li>
-        <li>Swap SOL for $Crumb Cat</li>
-      </ol>
-      <button class="copy-btn" data-clipboard-text="Hz7MeU72BNF9rCWyUFAwKTyCcjr6qsJm1jwYehnqjups">Copy Contract Address</button>
+<!-- How to Buy -->
+<section id="how-to-buy" class="howtobuy-section">
+  <div class="howtobuy-card">
+    <h2 class="howtobuy-heading">How to Buy</h2>
+    <p class="howtobuy-subheading">Buy directly on Jupiter below</p>
+    <div class="howtobuy-buttons">
+      <a href="https://jup.ag" target="_blank" class="howtobuy-btn howtobuy-btn-link">Buy on Jupiter</a>
+      <button class="howtobuy-btn howtobuy-btn-copy" data-clipboard-text="Hz7MeU72BNF9rCWyUFAwKTyCcjr6qsJm1jwYehnqjups">Copy Contract</button>
     </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- Track Section -->
 <section id="track">
@@ -324,17 +323,21 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     });
 
     // Copy button
-    const copyBtn = document.querySelector('.copy-btn');
-    copyBtn.addEventListener('click', () => {
-      const text = copyBtn.getAttribute('data-clipboard-text');
-      navigator.clipboard.writeText(text).then(() => {
-        copyBtn.textContent = "Copied!";
-        setTimeout(() => copyBtn.textContent = "Copy Contract Address", 2000);
-      });
-    });
+   
   </script>
 
 <!-- ✅ JavaScript goes here -->
+<script>
+document.querySelectorAll(".howtobuy-btn-copy").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const ca = btn.getAttribute("data-clipboard-text");
+    navigator.clipboard.writeText(ca).then(() => {
+      btn.textContent = "Copied!";
+      setTimeout(() => (btn.textContent = "Copy Contract"), 2000);
+    });
+  });
+});
+</script>
 
 
 <script>
@@ -397,6 +400,7 @@ normalLightbox.addEventListener("click", (e) => {
 
 </body>
 </html>
+
 
 
 
