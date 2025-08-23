@@ -634,7 +634,7 @@ body {
 }
 
 .howtobuy-card {
-  background: #1c1c1c;
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
   padding: 30px;
   border-radius: 16px;
@@ -697,4 +697,5 @@ body {
   background: #666;
   transform: scale(1.05);
 }
+
 
