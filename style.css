@@ -624,3 +624,77 @@ body {
   background: #57ddff;
   transform: translateY(-2px);
 }
+
+
+/* How to Buy Section */
+.howtobuy-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.howtobuy-card {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.howtobuy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.howtobuy-heading {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.howtobuy-subheading {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+.howtobuy-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.howtobuy-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Jupiter link button */
+.howtobuy-btn-link {
+  background: #00c389;
+  color: #fff;
+}
+.howtobuy-btn-link:hover {
+  background: #00a773;
+  transform: scale(1.05);
+}
+
+/* Copy button */
+.howtobuy-btn-copy {
+  background: #444;
+  color: #fff;
+}
+.howtobuy-btn-copy:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
