@@ -28,6 +28,7 @@ body {
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.4);
   z-index: 1000;
+  height: 38px;
 }
 
 .logo {
@@ -700,6 +701,7 @@ body {
   background: #666;
   transform: scale(1.05);
 }
+
 
 
 
