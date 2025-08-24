@@ -313,6 +313,26 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
    
   </script>
 
+
+<script>
+  // Close mobile nav when clicking outside
+document.addEventListener("click", function (e) {
+  const navMenu = document.querySelector(".mobile-menu"); // update to your nav menu class
+  const navToggle = document.querySelector(".menu-toggle"); // update to your toggle button class
+
+  if (!navMenu || !navToggle) return; // safety check
+
+  // if nav is open and click is outside both the menu and the toggle button
+  if (navMenu.classList.contains("active") && 
+      !navMenu.contains(e.target) && 
+      !navToggle.contains(e.target)) {
+    navMenu.classList.remove("active");
+  }
+});
+
+</script>
+
+   
 <!-- ✅ JavaScript goes here -->
 <script>
 document.querySelectorAll(".howtobuy-btn-copy").forEach(btn => {
@@ -387,6 +407,7 @@ normalLightbox.addEventListener("click", (e) => {
 
 </body>
 </html>
+
 
 
 
